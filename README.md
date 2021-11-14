@@ -15,8 +15,15 @@ buiding from source if the binary version of a library is not avalible. Using Co
 use `apt` to install the "dev" version of a package on Debian/Ubuntu, but Conan is cross-flatform, is also has more configurable
 options, for example, specifying the verion of the library required.
 ## build tool
-[CMake](https://cmake.org/). It does not matter what I think of CMake. It is the de facto building tool used by most C++ libraries. 
-Working with C++ requires the programmer knows some CMake. It is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
+1. [CMake](https://cmake.org/). CMake is horrible, generally one should avoid it.
+But It has become the de facto building tool used by most C++ libraries because of momentum.
+On matter what a C++ programmer might think of CMake, he usually need to know a little bit of CMake to do his work.
+If you have to use CMake, it is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
+2. [Meson](https://github.com/mesonbuild/meson). Meson is what CMake should have been. Basically it is like modern CMake semantics-wise,
+but with much clearer and readable syntax.
+3. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
+by a building system such as Meson. Since `ninja` files are not supposed to be manually written, the DSL used by `ninja` is designed for
+maximal speed. 
 
 ## library collections
 [folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
