@@ -6,10 +6,14 @@ Below are some C++ libraries I find useful.
 - Some items are not C++ libraies themselves, but are important to work with C++ projects, thus also included.
 
 ## package manager
-[spack](https://github.com/spack/spack). With spack,  different versions of the same C++ library can coexist side by side. 
+[spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
+With spack, different versions of the same C++ library can coexist side by side. 
 They can different by release verions, compiler choice, compiling flags, feature switch on/off. The user can painlessly try
 out as  many different combinations as he wants. Spack is a must-have if you have to twist C++ libraies a lot.  
-
+[Conan](https://github.com/conan-io/conan). With Conan, one can use binary libraries without much of pain, and fall back to
+buiding from source if the binary version of a library is not avalible. Using Conan to install a dependency is somehow like
+use `apt` to install the "dev" version of a package on Debian/Ubuntu, but Conan is cross-flatform, is also has more configurable
+options, for example, specifying the verion of the library required.
 ## build tool
 [CMake](https://cmake.org/). It does not matter what I think of CMake. It is the de facto building tool used by most C++ libraries. 
 Working with C++ requires the programmer knows some CMake. It is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
