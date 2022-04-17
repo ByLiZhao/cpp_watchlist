@@ -39,6 +39,8 @@ If something is missing from the standard library of C++, one might find it in f
 it have replacements in newer versions of C++, while others are designed with different design priorities. For example, `absl::Time` and `absl::Duration` are
 designed to replace `std::chrono::time_point` and `std::chrono::duration` in common tasks. They have less capabilites and guarantees but they also don't have
 to use the template-heavy appraoch that the standard library uses.
+3. [Poco](https://github.com/pocoproject/poco), Poco is a collection of C++ libraries that are designed for ease of use. 
+It focuses on network-centric applications.
 
 ## memory allocator 
  [jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading.
