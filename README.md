@@ -27,7 +27,7 @@ projects, simple Makefiles is sufficient to build them. It is important to know 
 3. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
 by a building system working at a higher level. Since `ninja` files are not supposed to be manually written, the DSL used by `ninja` is designed for
 maximal speed. 
-4. [bazel](https://github.com/bazelbuild/bazel), Bazel is designed to work with multiple langauges and build things at scale. When you have a very large codebase
+4. [Bazel](https://github.com/bazelbuild/bazel), Bazel is designed to work with multiple langauges and build things at scale. When you have a very large codebase
 that consists of source code written in multiple programming langauges, to ensure the correctness of building becomes important. Also for very large codebase,
 [remote caching](https://github.com/buchgr/bazel-remote/) of binary artifacts becomes necessary. Bazel can do this because it uses a server-client archetecture,
 designed while having scalability in mind. Bazel is best suited for monorepo development. 
