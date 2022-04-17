@@ -72,12 +72,14 @@ Modern implementations of malloc often provide the following extra features besi
  3. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
 
 ## Working with binary files:
-- [readelf](https://man7.org/linux/man-pages/man1/readelf.1.html), a Linux tool that display information about ETF object files.
-- [objdump](https://man7.org/linux/man-pages/man1/objdump.1.html), a Linux tool that display information about object files.
-- [C++filt](https://web.mit.edu/gnu/doc/html/binutils_10.html), a Linux tool to convert mangled C++ names to unmangled names.
-- [ldd](https://linux.die.net/man/1/ldd), a Linux tool to list all shared libraries an executable needs. (**Don't use it for executables you don't trust.**)
-- [ltrace](http://www.ltrace.org/), a Linux tool to trace calls to functions in shared libraries.
-
+1. Tools that inspect binary files
+    - [readelf](https://man7.org/linux/man-pages/man1/readelf.1.html), a Linux tool that display information about ETF object files.
+    - [objdump](https://man7.org/linux/man-pages/man1/objdump.1.html), a Linux tool that display information about object files.
+    - [C++filt](https://web.mit.edu/gnu/doc/html/binutils_10.html), a Linux tool to convert mangled C++ names to unmangled names.
+    - [ldd](https://linux.die.net/man/1/ldd), a Linux tool to list all shared libraries an executable needs. (**Don't use it for executables you don't trust.**)
+    - [ltrace](http://www.ltrace.org/), a Linux tool to trace calls to functions in shared libraries.
+2. The linker or linker. The default linker for Linuz is `ld`, known as the GNU linker. Clang has `lld` which is a drop-in replacement for `ld`. It is important
+to understand how the linker works when working with native programming langauges such as C/C++. 
 ## network
 - [asio](https://github.com/chriskohlhoff/asio/), asynchronous network programming library, supports serial ports too. It also has SSL support.
 - [beast](https://github.com/boostorg/beast), http ans WebSocket library built upon Asio.
