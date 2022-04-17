@@ -71,6 +71,14 @@ Modern implementations of malloc often provide the following extra features besi
  compiling options started in the form of `-fprofile-<*>`. 
  3. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
 
+## Error handling
+[Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
+The library aims to unifies error handling in C++. Accompaning with [the std::error proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1028r3.pdf),
+and [the deterministic failure proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1095r0.pdf), and
+[the deterministic exception proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0709r4.pdf)
+error handling in C++ can be greatly simplified. Though many pieces have been put into the langauge standard,
+the library is usable now. 
+
 ## Working with binary files:
 1. Tools that inspect binary files
     - [readelf](https://man7.org/linux/man-pages/man1/readelf.1.html), a Linux tool that display information about ETF object files.
