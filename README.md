@@ -48,8 +48,8 @@ Modern implementations of malloc often provide the following extra features besi
 - Leak detection. 
 - heap profiling.
 - performance tuning handlers.
- [Jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading. 
- [Gperftools](https://github.com/gperftools/gperftools/), the core of Gperftools is a malloc implementation called Tcmalloc. 
+1. [Jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading. 
+2. [Gperftools](https://github.com/gperftools/gperftools/), the core of Gperftools is a malloc implementation called Tcmalloc. 
  Besides leak detection, heap detection, performance tuning configurations, It also contains a CPU profiler.
  
 ## network
