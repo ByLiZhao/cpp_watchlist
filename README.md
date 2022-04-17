@@ -33,7 +33,7 @@ that consists of source code written in multiple programming langauges, to ensur
 designed while having scalability in mind. Bazel is best suited for monorepo development. 
 
 ## library collections
-[folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
+1. [folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
 If something is missing from the standard library of C++, one might find it in folly.
 
 ## memory allocator 
