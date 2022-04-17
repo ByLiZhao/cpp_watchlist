@@ -80,14 +80,14 @@ Modern implementations of malloc often provide the following extra features besi
     - [ltrace](http://www.ltrace.org/), a Linux tool to trace calls to functions in shared libraries.
 2. The linker or linkers. The default linker for Linuz is `ld`, known as the GNU linker. Clang has `lld` which is a drop-in replacement for `ld`. It is important
 to understand how the linker works when working with native programming langauges such as C/C++. 
-## network
+## Network libraries
 - [asio](https://github.com/chriskohlhoff/asio/), asynchronous network programming library, supports serial ports too. It also has SSL support.
 - [beast](https://github.com/boostorg/beast), http ans WebSocket library built upon Asio.
 
-## data storage and quering
+## Data storage and quering
 If you need a in-process database:
 - [SQLiteCpp](https://github.com/SRombauts/SQLiteCpp), a C++ wrapper for the [SQLite](https://www.sqlite.org/about.html) library, a in-process SQL databse engine.
-- [LebelDB](https://github.com/google/leveldb), a on-disk key-value data egine. 
+- [LebelDB](https://github.com/google/leveldb), a on-disk key-value data egine.
 
 ## testing
 [Catch2](https://github.com/catchorg/Catch2), a unit test framework, can either be used as a header-only library (for convenience) or linked as a static library (for better complilation time when the tested project grows bigger). 
