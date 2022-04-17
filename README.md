@@ -6,7 +6,7 @@ Below are some C++ tools and libraries I find useful.
 - I have not tried all of them.
 
 ## package manager
-1. [spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
+1. [Spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
 With spack, different versions of the same C++ library can coexist side by side. 
 They can different by release verions, compiler choice, compiling flags, features switch on/off. The user can painlessly try
 out as  many different combinations as he wants. Spack is a must-have if you have to twist C++ libraies a lot and often have
