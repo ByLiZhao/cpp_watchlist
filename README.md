@@ -35,6 +35,10 @@ designed while having scalability in mind. Bazel is best suited for monorepo dev
 ## library collections
 1. [folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
 If something is missing from the standard library of C++, one might find it in folly.
+2. [abseil-cpp](https://github.com/abseil/abseil-cpp). Abseil-cpp is a collection of C++11 compliant libraries from Google. Many types included in
+it have replacements in newer versions of C++, while others are designed with different design priorities. For example, `absl::Time` and `absl::Duration` are
+designed to replace `std::chrono::time_point` and `std::chrono::duration` in common tasks. They have less capabilites and guarantees but they also don't have
+to use the template-heavy appraoch that the standard library uses.
 
 ## memory allocator 
  [jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading.
