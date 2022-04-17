@@ -1,9 +1,9 @@
-# cpp_watchlist
-Below are some C++ libraries I find useful. 
+# C++ Tools and Libraries
+Below are some C++ tools and libraries I find useful. 
 
 - This repository is created for my own reference. 
 - I want to keep the list as short as possible. 
-- Some items are not C++ libraies themselves, but are important to work with C++ projects, thus also included.
+- I have not tried all of them.
 
 ## package manager
 1. [spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
