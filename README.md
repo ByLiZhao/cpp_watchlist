@@ -13,9 +13,10 @@ out as  many different combinations as he wants. Spack is a must-have if you hav
 multiple incompatible versions of the same libraries around. It could also be very useful to those who need to deploy  many
 binaries with constant updating of dependencies. 
 2. [Conan](https://github.com/conan-io/conan). With Conan, one can use binary libraries without much of pain, and fall back to
-buiding from source if the binary version of a library is not avalible. Using Conan to install a dependency is somehow like
-use `apt` to install the "dev" version of a package on Debian/Ubuntu, but Conan is cross-flatform, is also has more configurable
-options, for example, specifying the verion of the library required.
+buiding from source if a certain version of a library is not avalible. Using Conan to install a library is somehow like
+using `apt` to install the "dev" version of a package on Debian/Ubuntu. The difference is that Conan is cross-flatform, and also with
+more configurable options, for example, specifying the verion of a library. More importantly, Conan does not mess with system-wide
+libraries. It is never a good idea to use a system package manager to manage project dependencies for this reason. 
 ## build tool
 1. [CMake](https://cmake.org/). CMake is horrible, generally one should avoid it.
 But It has become the de facto building tool used by most C++ libraries because of momentum.
