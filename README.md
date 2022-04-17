@@ -43,8 +43,14 @@ to use the template-heavy appraoch that the standard library uses.
 It focuses on network-centric applications.
 4. [Boost](https://github.com/boostorg/boost). A collect of libraries that aim to supplement the standard library.
 
-## Memory allocator 
- [Jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading.
+## Memory allocators
+Modern implementations of malloc often provide the following extra features besides allocating and deallocating memory chuncks:
+- Leak detection. 
+- heap profiling.
+- performance tuning handlers.
+ [Jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading. 
+ [Gperftools](https://github.com/gperftools/gperftools/), the core of Gperftools is a malloc implementation called Tcmalloc. 
+ Besides leak detection, heap detection, performance tuning configurations, It also contains a CPU profiler.
  
 ## network
 - [asio](https://github.com/chriskohlhoff/asio/), asynchronous network programming library, supports serial ports too. It also has SSL support.
