@@ -52,6 +52,24 @@ Modern implementations of malloc often provide the following extra features besi
 2. [Gperftools](https://github.com/gperftools/gperftools/), the core of Gperftools is a malloc implementation called Tcmalloc. 
  Besides leak detection, heap detection, performance tuning configurations, It also contains a CPU profiler.
  
+ ## Sanitizers
+ 1. [Google's sanitizer collection](https://github.com/google/sanitizers), which includes:
+     - AddressSanitizer which includes LeakSanitizer (detecting memory leaks), detecting using illegal memory and memory overflow.
+     - ThreadSanitizer which detects data races and deadlocks for C++.
+     - MemorySanitizer  which detects use of uninitialized memory.
+     - HWASAN, short for Hardware-assisted AddressSanitizer, which is AddressSanitizer that needs hardware support. 
+     - UBSan, or UndefinedBehaviorSanitizer
+  These sanitizers have been integrated into both Clang and Gcc, can be easily enabled with `-fsanitize=<feature>` compiler options.
+ 2. [Valgrind](https://valgrind.org/). Valgrind is essentially a tool that construct a virtual-machine-like executing enviroment for comcipled binary executables.
+ When executables are executed in the virtual enviromental, many aspects of the program can be checked at runtime. 
+ 
+ ## Profiling and tracing
+ Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
+ 1. [Linux perf tools](https://github.com/brendangregg/perf-tools), 
+ a collection of profiling and tracing tools built on Linux's "ftrace" and "perf" kernel facilities. 
+ 2. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
+ compiling options started in the form of `-fprofile-<*>`. 
+ 3. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
 ## network
 - [asio](https://github.com/chriskohlhoff/asio/), asynchronous network programming library, supports serial ports too. It also has SSL support.
 - [beast](https://github.com/boostorg/beast), http ans WebSocket library built upon Asio.
