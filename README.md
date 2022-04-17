@@ -24,9 +24,13 @@ No matter what a C++ programmer might think of CMake, he usually need to know so
 If you have to use CMake, it is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
 2. [Make](https://www.gnu.org/software/make/). Make is even older than CMake, and is often used as the backend for CMake. For small C/C++
 projects, simple Makefiles is sufficient to build them. It is important to know the basics of Make.
-4. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
+3. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
 by a building system working at a higher level. Since `ninja` files are not supposed to be manually written, the DSL used by `ninja` is designed for
 maximal speed. 
+4. [bazel](https://github.com/bazelbuild/bazel), Bazel is designed to work with multiple langauges and build things at scale. When you have a very large codebase
+that consists of source code written in multiple programming langauges, to ensure the correctness of building becomes important. Also for very large codebase,
+[remote caching](https://github.com/buchgr/bazel-remote/) of binary artifacts becomes necessary. Bazel can do this because it uses a server-client archetecture,
+designed while having scalability in mind. Bazel is best suited for monorepo development. 
 
 ## library collections
 [folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
