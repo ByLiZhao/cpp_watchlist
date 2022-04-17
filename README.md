@@ -5,7 +5,7 @@ Below are some C++ tools and libraries I find useful.
 - I want to keep the list as short as possible. 
 - I have not tried all of them.
 
-## package manager
+## Package manager
 1. [Spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
 With spack, different versions of the same C++ library can coexist side by side. 
 They can different by release verions, compiler choice, compiling flags, features switch on/off. The user can painlessly try
@@ -17,7 +17,7 @@ buiding from source if a certain version of a library is not avalible. Using Con
 using `apt` to install the "dev" version of a package on Debian/Ubuntu. The difference is that Conan is cross-flatform, and also with
 more configurable options, for example, specifying the verion of a library. More importantly, Conan does not mess with system-wide
 libraries. It is never a good idea to use a system package manager to manage project dependencies for this reason. 
-## build tool
+## Build tools
 1. [CMake](https://cmake.org/). CMake is horrible. I wish I could avoid it.
 But It has become the de facto building tool used by most C++ libraries because of momentum.
 No matter what a C++ programmer might think of CMake, he usually need to know some CMake to do his work.
@@ -32,7 +32,7 @@ that consists of source code written in multiple programming langauges, to ensur
 [remote caching](https://github.com/buchgr/bazel-remote/) of binary artifacts becomes necessary. Bazel can do this because it uses a server-client archetecture,
 designed while having scalability in mind. Bazel is best suited for monorepo development. 
 
-## library collections
+## Library collections
 1. [Folly](https://github.com/facebook/folly). Folly stands for "Facebook Open-source library". It is actually a collection of useful libraries. 
 If something is missing from the standard library of C++, one might find it in folly.
 2. [Abseil-cpp](https://github.com/abseil/abseil-cpp). Abseil-cpp is a collection of C++11 compliant libraries from Google. Many types included in
@@ -43,8 +43,8 @@ to use the template-heavy appraoch that the standard library uses.
 It focuses on network-centric applications.
 4. [Boost](https://github.com/boostorg/boost). A collect of libraries that aim to supplement the standard library.
 
-## memory allocator 
- [jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading.
+## Memory allocator 
+ [Jemalloc](https://github.com/jemalloc/jemalloc), memory allocator from Facebook with better performance with multithreading.
  
 ## network
 - [asio](https://github.com/chriskohlhoff/asio/), asynchronous network programming library, supports serial ports too. It also has SSL support.
