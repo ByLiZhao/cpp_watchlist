@@ -76,7 +76,9 @@ Modern implementations of malloc often provide the following extra features besi
 The library aims to unifies error handling in C++. Accompaning with [the std::error proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1028r3.pdf),
 and [the deterministic failure proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1095r0.pdf), and
 [the deterministic exception proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0709r4.pdf)
-error handling in C++ can be greatly simplified. Though many pieces have been put into the langauge standard,
+error handling in C++ can be greatly simplified. 
+It even makes intefacing with C code easier, [for example](https://ned14.github.io/outcome/experimental/c-api/example2/).
+Though many pieces have been put into the langauge standard,
 the library is usable now. 
 
 ## Working with binary files:
