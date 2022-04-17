@@ -8,8 +8,10 @@ Below are some C++ tools and libraries I find useful.
 ## package manager
 1. [spack](https://github.com/spack/spack). Spack is to C++ what `venv` to Python. 
 With spack, different versions of the same C++ library can coexist side by side. 
-They can different by release verions, compiler choice, compiling flags, feature switch on/off. The user can painlessly try
-out as  many different combinations as he wants. Spack is a must-have if you have to twist C++ libraies a lot.  
+They can different by release verions, compiler choice, compiling flags, features switch on/off. The user can painlessly try
+out as  many different combinations as he wants. Spack is a must-have if you have to twist C++ libraies a lot and often have
+multiple incompatible versions of the same libraries around. It could also be very useful to those who need to deploy  many
+binaries with constant updating of dependencies. 
 2. [Conan](https://github.com/conan-io/conan). With Conan, one can use binary libraries without much of pain, and fall back to
 buiding from source if the binary version of a library is not avalible. Using Conan to install a dependency is somehow like
 use `apt` to install the "dev" version of a package on Debian/Ubuntu, but Conan is cross-flatform, is also has more configurable
