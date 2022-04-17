@@ -22,10 +22,10 @@ libraries. It is never a good idea to use a system package manager to manage pro
 But It has become the de facto building tool used by most C++ libraries because of momentum.
 No matter what a C++ programmer might think of CMake, he usually need to know some CMake to do his work.
 If you have to use CMake, it is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
-2. [Meson](https://github.com/mesonbuild/meson). Meson is what CMake should have been. Basically it is like modern CMake semantics-wise,
-but with much clearer and readable syntax.
-3. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
-by a building system such as Meson. Since `ninja` files are not supposed to be manually written, the DSL used by `ninja` is designed for
+2. [Make](https://www.gnu.org/software/make/). Make is even older than CMake, and is often used as the backend for CMake. For small C/C++
+projects, simple Makefiles is sufficient to build them. It is important to know the basics of Make.
+4. [Ninja](https://github.com/ninja-build/ninja). Ninja is like `make`, but has a smaller scope. It is supposed to be used as a backend
+by a building system working at a higher level. Since `ninja` files are not supposed to be manually written, the DSL used by `ninja` is designed for
 maximal speed. 
 
 ## library collections
