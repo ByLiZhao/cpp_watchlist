@@ -18,9 +18,9 @@ using `apt` to install the "dev" version of a package on Debian/Ubuntu. The diff
 more configurable options, for example, specifying the verion of a library. More importantly, Conan does not mess with system-wide
 libraries. It is never a good idea to use a system package manager to manage project dependencies for this reason. 
 ## build tool
-1. [CMake](https://cmake.org/). CMake is horrible, generally one should avoid it.
+1. [CMake](https://cmake.org/). CMake is horrible. I wish I could avoid it.
 But It has become the de facto building tool used by most C++ libraries because of momentum.
-On matter what a C++ programmer might think of CMake, he usually need to know a little bit of CMake to do his work.
+No matter what a C++ programmer might think of CMake, he usually need to know some CMake to do his work.
 If you have to use CMake, it is important to learn some [Modern CMake](https://cliutils.gitlab.io/modern-cmake/).
 2. [Meson](https://github.com/mesonbuild/meson). Meson is what CMake should have been. Basically it is like modern CMake semantics-wise,
 but with much clearer and readable syntax.
