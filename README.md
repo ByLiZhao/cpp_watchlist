@@ -101,10 +101,13 @@ If you need a in-process database:
 
 ## Unit test
 1. [Catch2](https://github.com/catchorg/Catch2), a unit test framework, can either be used as a header-only library (for convenience) or linked as a static library (for better complilation time when the tested project grows bigger). 
+2. [Google Test](https://github.com/google/googletest), the most popular unit test framework.
 
-## remote procedure call & message queue
-- [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
-- [ZeroMQ](https://github.com/zeromq/libzmq), publish and subscribe messages over network.
+## Remote procedure call & message queue
+[gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
+
+## Message Queue
+[ZeroMQ](https://github.com/zeromq/libzmq), publish and subscribe messages over network.
 
 ## image processing
 [openCV](https://github.com/opencv/opencv), only use its "core", "imgproc" and "imgcodecs" modules.
