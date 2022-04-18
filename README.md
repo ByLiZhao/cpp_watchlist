@@ -149,16 +149,21 @@ If you need a in-process database:
 5. [boost-numerics](https://github.com/boostorg/safe_numerics), handle annoying integer arithmetic in C++ correctly.
 6. [boost-math](https://github.com/boostorg/math), a collect of math utilites.
 7. [boost-multiprecison](https://github.com/boostorg/multiprecision), if you need more precision than buit-in types. 
+8. [xsimd](https://github.com/xtensor-stack/xsimd), C++ wrappers for SIMD intrinsics and parallelized, optimized mathematical functions.
 
 # Numerical computation
 1. [Eigen](https://gitlab.com/libeigen/eigen), template library for linear algebra. It can also linked against IntelMKL, OpenBlas, Lapack, etc.
-2. [CasADi](https://github.com/casadi/casadi), auto differientiation library.
+2. [CasADi](https://github.com/casadi/casadi), a symbolic framework for modeling differentiation based problems.
 3. [Clip](https://github.com/coin-or/Clp), linear programming library using primal and dual Simplex methods.
 4. [SoPlex](https://github.com/scipopt/soplex), exact solution to linear programming library with rational input.
-5. [OptimLib](https://github.com/kthohr/optim), nonlinear programming.
+5. [OptimLib](https://github.com/kthohr/optim), nonlinear programming using derivative-free methods. 
 6. [Rehearse](https://github.com/coin-or/Rehearse), programmatically building optimization problem.
 7. [SuitSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse), a coolection of sparse matrix algorithms.
 8. [xtensor](https://github.com/xtensor-stack/xtensor), working with tensors.
+9. [stats](https://github.com/kthohr/stats#distributions), a C++ header-only library of statistical distribution functions with R-like syntax.
+10. [Ipopt](https://github.com/coin-or/Ipopt), nonlinear optimization.
+11. [autodiff](https://github.com/autodiff/autodiff/), automatic differentiation.
+12. [ceres](https://github.com/ceres-solver/ceres-solver), solving nonlinear least square problems and constrained nonlinear optimization problem.
 
 
 ## Data processing
