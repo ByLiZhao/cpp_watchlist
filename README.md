@@ -123,6 +123,7 @@ If you need a in-process database:
 Note that both [Folly](https://github.com/facebook/folly/blob/main/folly/experimental/ProgramOptions.cpp) 
 and [Abseil](https://abseil.io/docs/python/guides/flags) has their own command line option parsing library, 
 there is also [gflags](https://github.com/gflags/gflags).
+4. [cli](https://github.com/daniele77/cli), creating interactive command line interfaces.
 
 ## Parse structured text
 - [tinyxml2](https://github.com/leethomason/tinyxml2), parse xml data.
