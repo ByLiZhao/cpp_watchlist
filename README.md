@@ -112,9 +112,6 @@ If you need a in-process database:
 ## Image processing
 [openCV](https://github.com/opencv/opencv), one can start with its "core", "imgproc" and "imgcodecs" modules.
 
-## Linear algebra
-[Eigen](https://gitlab.com/libeigen/eigen), template library for linear algebra. It can also linked against IntelMKL, OpenBlas, Lapack, etc.
-
 ## String formatting
 [fmt](https://github.com/fmtlib/fmt), type-safe alternative for C's `printf`. Goodbye, idiotic `iostream`.
 
@@ -151,6 +148,17 @@ If you need a in-process database:
 4. [mp-units](https://github.com/mpusz/units), a units library for C++.
 5. [boost-numerics](https://github.com/boostorg/safe_numerics), handle annoying integer arithmetic in C++ correctly.
 6. [boost-math](https://github.com/boostorg/math), a collect of math utilites.
+7. [boost-multiprecison](https://github.com/boostorg/multiprecision), if you need more precision than buit-in types. 
+
+# Numerical computation
+1. [Eigen](https://gitlab.com/libeigen/eigen), template library for linear algebra. It can also linked against IntelMKL, OpenBlas, Lapack, etc.
+2. [CasADi](https://github.com/casadi/casadi), auto differientiation library.
+3. [Clip](https://github.com/coin-or/Clp), linear programming library using primal and dual Simplex methods.
+4. [SoPlex](https://github.com/scipopt/soplex), exact solution to linear programming library with rational input.
+5. [OptimLib](https://github.com/kthohr/optim), nonlinear programming.
+6. [Rehearse](https://github.com/coin-or/Rehearse), programmatically building optimization problem.
+7. [SuitSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse), a coolection of sparse matrix algorithms.
+
 
 ## Data processing
 1. [Dataframe](https://github.com/hosseinmoein/DataFrame), a C++ library that provides interface and functionality similar to  Pandas or R data.frame.
