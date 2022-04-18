@@ -17,6 +17,7 @@ buiding from source if a certain version of a library is not avalible. Using Con
 using `apt` to install the "dev" version of a package on Debian/Ubuntu. The difference is that Conan is cross-flatform, and also with
 more configurable options, for example, specifying the verion of a library. More importantly, Conan does not mess with system-wide
 libraries. It is never a good idea to use a system package manager to manage project dependencies for this reason. 
+
 ## Build tools
 1. [CMake](https://cmake.org/). CMake is horrible. I wish I could avoid it.
 But It has become the de facto building tool used by most C++ libraries because of momentum.
@@ -119,6 +120,9 @@ If you need a in-process database:
 1. [boost operator](https://www.boost.org/doc/libs/1_65_0/libs/utility/operators.htm), part of tis functionality can be replaced by the "space operator" introduced in C++20.
 2. [Better enums](https://github.com/aantron/better-enums), working with enums less painfully.
 3. [cxxopts](https://github.com/jarro2783/cxxopts), a library for parsing command line options.
+Note that both [Folly](https://github.com/facebook/folly/blob/main/folly/experimental/ProgramOptions.cpp) 
+and [Abseil](https://abseil.io/docs/python/guides/flags) has their own command line option parsing library, 
+there is also [gflags](https://github.com/gflags/gflags).
 
 ## Parse structured text
 - [tinyxml2](https://github.com/leethomason/tinyxml2), parse xml data.
