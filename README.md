@@ -179,7 +179,7 @@ there is also [gflags](https://github.com/gflags/gflags).
 
 ## GUI 
 1. [QT](https://www.qt.io/), cross platform C++ GUI framework.
-3. [ImGui](https://github.com/ocornut/imgui), direct mode C++ GUI library.
+3. [Dear ImGui](https://github.com/ocornut/imgui), direct mode C++ GUI library.
 
 ## Utility libraries 
 1. [Boost CRC](https://github.com/boostorg/crc), compute CRC value of bytes.
