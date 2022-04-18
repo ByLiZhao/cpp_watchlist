@@ -180,4 +180,6 @@ there is also [gflags](https://github.com/gflags/gflags).
 
 ## Utility libraries 
 1. [Boost CRC](https://github.com/boostorg/crc), compute CRC value of bytes.
+2. [Guidelines Support Library](https://github.com/Microsoft/GSL), functions and types that are suggested for 
+use by [the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) maintained by the Standard C++ Foundation. 
 
