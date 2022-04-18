@@ -119,7 +119,9 @@ If you need a in-process database:
 [fmt](https://github.com/fmtlib/fmt), type-safe alternative for C's `printf`. Goodbye, idiotic `iostream`.
 
 ## Reduce boilerplate
-[boost operator](https://www.boost.org/doc/libs/1_65_0/libs/utility/operators.htm), part of tis functionality can be replaced by the "space operator" introduced in C++20.
+1. [boost operator](https://www.boost.org/doc/libs/1_65_0/libs/utility/operators.htm), part of tis functionality can be replaced by the "space operator" introduced in C++20.
+2. [Better enums](https://github.com/aantron/better-enums), working with enums less painfully.
+3. [cxxopts](https://github.com/jarro2783/cxxopts), a library for parsing command line options.
 
 ## Parse structured text
 - [tinyxml2](https://github.com/leethomason/tinyxml2), parse xml data.
@@ -146,5 +148,12 @@ If you need a in-process database:
 1. [GNU Scientific Library](https://github.com/ampl/gsl). A library to evaluate special mahematical functions, written in C with C++ wrappers.
 2. [LibTom](https://www.libtom.net/), LibTomMath, LibFastTomMath and friends. 
 3. [TinyExpr](https://github.com/codeplea/tinyexpr), a very small parser  for math expressions, written in C.
+4. [mp-units](https://github.com/mpusz/units), a units library for C++.
+
+## Data processing
+1. [Dataframe](https://github.com/hosseinmoein/DataFrame), a C++ library that provides interface and functionality similar to  Pandas or R data.frame.
+
+## Utility libraries 
+1. [Boost CRC](https://github.com/boostorg/crc), compute CRC value of bytes.
 
 ## Robotics libraries  
