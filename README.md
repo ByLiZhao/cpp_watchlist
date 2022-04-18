@@ -142,5 +142,9 @@ If you need a in-process database:
 ## Call C++ code from Python
 [pybind11](https://github.com/pybind/pybind11), a library that makes writing Python wrappers for C++ libraries easier.
 
+## Basic Mathematics
+1. [GNU Scientific Library](https://github.com/ampl/gsl). A library to evaluate special mahematical functions, written in C with C++ wrappers.
+2. [LibTom](https://www.libtom.net/), LibTomMath, LibFastTomMath and friends. 
+3. [TinyExpr](https://github.com/codeplea/tinyexpr), a very small parser  for math expressions, written in C.
 
 ## Robotics libraries  
