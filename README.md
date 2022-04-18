@@ -158,6 +158,7 @@ If you need a in-process database:
 5. [OptimLib](https://github.com/kthohr/optim), nonlinear programming.
 6. [Rehearse](https://github.com/coin-or/Rehearse), programmatically building optimization problem.
 7. [SuitSparse](https://github.com/DrTimothyAldenDavis/SuiteSparse), a coolection of sparse matrix algorithms.
+8. [xtensor](https://github.com/xtensor-stack/xtensor), working with tensors.
 
 
 ## Data processing
