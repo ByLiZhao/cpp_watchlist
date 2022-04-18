@@ -103,22 +103,22 @@ If you need a in-process database:
 1. [Catch2](https://github.com/catchorg/Catch2), a unit test framework, can either be used as a header-only library (for convenience) or linked as a static library (for better complilation time when the tested project grows bigger). 
 2. [Google Test](https://github.com/google/googletest), the most popular unit test framework.
 
-## Remote procedure call & message queue
+## Remote procedure call
 [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
 
 ## Message Queue
 [ZeroMQ](https://github.com/zeromq/libzmq), publish and subscribe messages over network.
 
-## image processing
-[openCV](https://github.com/opencv/opencv), only use its "core", "imgproc" and "imgcodecs" modules.
+## Image processing
+[openCV](https://github.com/opencv/opencv), one can start with its "core", "imgproc" and "imgcodecs" modules.
 
-## linear algebra
+## Linear algebra
 [Eigen](https://gitlab.com/libeigen/eigen), template library for linear algebra. It can also linked against IntelMKL, OpenBlas, Lapack, etc.
 
-## string formatting
+## String formatting
 [fmt](https://github.com/fmtlib/fmt), type-safe alternative for C's `printf`. Goodbye, idiotic `iostream`.
 
-## reduce boilerplate
+## Reduce boilerplate
 [boost operator](https://www.boost.org/doc/libs/1_65_0/libs/utility/operators.htm), part of tis functionality can be replaced by the "space operator" introduced in C++20.
 
 ## Parse structured text
@@ -127,14 +127,20 @@ If you need a in-process database:
 - [toml++](https://github.com/marzer/tomlplusplus/), parse TOML file.
 - [yaml-cpp](https://github.com/jbeder/yaml-cpp), parse YAML file.
 
-## logging
+## Data Serialization
+- [Protocol buffers](https://github.com/protocolbuffers/protobuf), data serialization format from Google.
+- [Cap'n proto](https://github.com/capnproto/capnproto), a data serialization format that tries to improve on Protocol buffers. This is a zero-copy format.
+- [Simple binary encoding](https://github.com/real-logic/simple-binary-encoding), a data serialization format used in the finacial industries. It is also a zero-copy format with different design tradeoffs than Cap'n proto.
+- [MessagePack](https://github.com/msgpack/msgpack), a data serialization format that does not need separate schema files. It is good for small data transmission between different processes on the same machine. It is less extensible than above formats, but can make simple things simple.
+
+## Logging
 [spdlog](https://github.com/gabime/spdlog), a configurable logging library.
 
-## interprocess communication
+## Interprocess communication
 [boost interprocess](https://www.boost.org/doc/libs/1_63_0/doc/html/interprocess.html), shared memory, interprocess synchronization primitives, message queue, mapped file, etc.
 
-## add Python wrapper to C++ library
-[pybind11](https://github.com/pybind/pybind11), call C++ code from Python.
+## Call C++ code from Python
+[pybind11](https://github.com/pybind/pybind11), a library that makes writing Python wrappers for C++ libraries easier.
 
 
 ## Robotics libraries  
