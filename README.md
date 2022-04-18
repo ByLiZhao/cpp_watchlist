@@ -185,5 +185,7 @@ there is also [gflags](https://github.com/gflags/gflags).
 1. [Boost CRC](https://github.com/boostorg/crc), compute CRC value of bytes.
 2. [Guidelines Support Library](https://github.com/Microsoft/GSL), functions and types that are suggested for 
 use by [the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) maintained by the Standard C++ Foundation. 
+3. [Strict Variant](https://github.com/garbageslam/strict-variant), throwing move constructor causses problems, so, why not ban it in varaint.
+
 
 
