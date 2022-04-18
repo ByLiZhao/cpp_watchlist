@@ -142,6 +142,9 @@ there is also [gflags](https://github.com/gflags/gflags).
 ## Interprocess communication
 [boost interprocess](https://www.boost.org/doc/libs/1_63_0/doc/html/interprocess.html), shared memory, interprocess synchronization primitives, message queue, mapped file, etc.
 
+## Multiple dispatching
+[Yomm2](https://github.com/jll63/yomm2), multiple dispatching in C++.
+
 ## Call C++ code from Python
 [pybind11](https://github.com/pybind/pybind11), a library that makes writing Python wrappers for C++ libraries easier.
 
@@ -182,4 +185,5 @@ there is also [gflags](https://github.com/gflags/gflags).
 1. [Boost CRC](https://github.com/boostorg/crc), compute CRC value of bytes.
 2. [Guidelines Support Library](https://github.com/Microsoft/GSL), functions and types that are suggested for 
 use by [the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) maintained by the Standard C++ Foundation. 
+
 
