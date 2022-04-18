@@ -150,6 +150,7 @@ If you need a in-process database:
 3. [TinyExpr](https://github.com/codeplea/tinyexpr), a very small parser  for math expressions, written in C.
 4. [mp-units](https://github.com/mpusz/units), a units library for C++.
 5. [boost-numerics](https://github.com/boostorg/safe_numerics), handle annoying integer arithmetic in C++ correctly.
+6. [boost-math](https://github.com/boostorg/math), a collect of math utilites.
 
 ## Data processing
 1. [Dataframe](https://github.com/hosseinmoein/DataFrame), a C++ library that provides interface and functionality similar to  Pandas or R data.frame.
