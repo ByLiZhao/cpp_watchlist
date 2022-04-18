@@ -186,6 +186,6 @@ there is also [gflags](https://github.com/gflags/gflags).
 2. [Guidelines Support Library](https://github.com/Microsoft/GSL), functions and types that are suggested for 
 use by [the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) maintained by the Standard C++ Foundation. 
 3. [Strict Variant](https://github.com/garbageslam/strict-variant), throwing move constructor causses problems, so, why not ban it in varaint.
-
+4. [Boost-PFR](https://github.com/boostorg/pfr), iterate over members of simple aggregate types during compile time, no macros needed.
 
 
