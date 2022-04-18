@@ -164,6 +164,7 @@ If you need a in-process database:
 10. [Ipopt](https://github.com/coin-or/Ipopt), nonlinear optimization.
 11. [autodiff](https://github.com/autodiff/autodiff/), automatic differentiation.
 12. [ceres](https://github.com/ceres-solver/ceres-solver), solving nonlinear least square problems and constrained nonlinear optimization problem.
+13. [CGAL](https://github.com/CGAL/cgal), computational geometry. 
 
 
 ## Data processing
