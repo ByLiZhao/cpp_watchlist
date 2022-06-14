@@ -74,6 +74,7 @@ Modern implementations of malloc often provide the following extra features besi
  compiling options started in the form of `-fprofile-<*>`. 
  4. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
  5. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful.
+ 6. [strace](https://en.wikipedia.org/wiki/Strace), roughly equivalent to `perf trace` in terms of functionality. It is used to trace a process's interaction with the Linux kernel.
 
 ## Error handling
 [Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
