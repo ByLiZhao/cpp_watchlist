@@ -67,11 +67,13 @@ Modern implementations of malloc often provide the following extra features besi
  ## Profiling and tracing
  Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
  1. [Linux perf tools](https://github.com/brendangregg/perf-tools), 
- a collection of profiling and tracing tools built on Linux's "ftrace" and "perf" kernel facilities. 
- 2. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
+ a collection of profiling and tracing tools built on Linux's [ftrace](https://en.wikipedia.org/wiki/Ftrace)
+ and [perf](https://en.wikipedia.org/wiki/Perf_(Linux)) kernel facilities.
+ 2. [perf](https://github.com/torvalds/linux/tree/master/tools/perf) as mentoned above.
+ 3. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
  compiling options started in the form of `-fprofile-<*>`. 
- 3. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
- 4. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful.
+ 4. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
+ 5. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful.
 
 ## Error handling
 [Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
