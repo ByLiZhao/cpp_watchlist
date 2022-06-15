@@ -105,8 +105,7 @@ If you need a in-process database:
 - [LebelDB](https://github.com/google/leveldb), a on-disk key-value data egine.
 
 ## Unit test
-1. [Catch2](https://github.com/catchorg/Catch2), a unit test framework, can either be used as a header-only library (for convenience) or linked as a static library (for better complilation time when the tested project grows bigger). 
-2. [Google Test](https://github.com/google/googletest), the most popular unit test framework.
+[Google Test](https://github.com/google/googletest), the most popular unit test framework.
 
 ## Remote procedure call
 [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
