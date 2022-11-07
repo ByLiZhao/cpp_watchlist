@@ -141,6 +141,7 @@ there is also [gflags](https://github.com/gflags/gflags).
 
 ## Logging
 [spdlog](https://github.com/gabime/spdlog), a configurable logging library.
+[quill](https://github.com/quilljs/quill), low latency logging library.
 
 ## Interprocess communication
 [boost interprocess](https://www.boost.org/doc/libs/1_63_0/doc/html/interprocess.html), shared memory, interprocess synchronization primitives, message queue, mapped file, etc.
