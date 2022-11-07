@@ -92,6 +92,7 @@ the library is usable now.
     - [C++filt](https://web.mit.edu/gnu/doc/html/binutils_10.html), a Linux tool to convert mangled C++ names to unmangled names.
     - [ldd](https://linux.die.net/man/1/ldd), a Linux tool to list all shared libraries an executable needs. (**Don't use it for executables you don't trust.**)
     - [ltrace](http://www.ltrace.org/), a Linux tool to trace calls to functions in shared libraries.
+    - `hexdump` and `xxd`, to view binary files in hex format.
 2. The linker or linkers. The default linker for Linuz is `ld`, known as the GNU linker. Clang has `lld` which is a drop-in replacement for `ld`. It is important
 to understand how the linker works when working with native programming langauges such as C/C++. 
 ## Network libraries
