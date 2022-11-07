@@ -105,6 +105,7 @@ If you need a in-process database:
 
 ## Unit test
 [Google Test](https://github.com/google/googletest), the most popular unit test framework.
+[catch2](https://github.com/catchorg/Catch2), a lightweight unit test framwork that allows you to write test along with source code.
 
 ## Remote procedure call
 [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
