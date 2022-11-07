@@ -60,6 +60,7 @@ Modern implementations of malloc often provide the following extra features besi
      - MemorySanitizer  which detects use of uninitialized memory.
      - HWASAN, short for Hardware-assisted AddressSanitizer, which is AddressSanitizer that needs hardware support. 
      - UBSan, or UndefinedBehaviorSanitizer
+     
   These sanitizers have been integrated into both Clang and Gcc, can be easily enabled with `-fsanitize=<feature>` compiler options.
  2. [Valgrind](https://valgrind.org/). Valgrind is essentially a tool that construct a virtual-machine-like executing enviroment for comcipled binary executables.
  When executables are executed in the virtual enviromental, many aspects of the program can be checked at runtime. 
