@@ -61,7 +61,7 @@ Modern implementations of malloc often provide the following extra features besi
      - HWASAN, short for Hardware-assisted AddressSanitizer, which is AddressSanitizer that needs hardware support. 
      - UBSan, or UndefinedBehaviorSanitizer.
  2. [Valgrind](https://valgrind.org/). Valgrind is essentially a tool that construct a virtual-machine-like executing enviroment for comcipled binary executables.
- When executables are executed in the virtual enviromental, many aspects of the program can be checked at runtime. 
+ When executables are executed in the virtual enviromental, many aspects of the program can be checked at runtime. Valgrind is thus essentially a very advanced trading tool. Though because of its VM-like approach, the performance penalty is big as a tracing tool.
  
  ## Profiling and tracing
  Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
