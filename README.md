@@ -63,19 +63,26 @@ Modern implementations of malloc often provide the following extra features besi
  2. [Valgrind](https://valgrind.org/). Valgrind is essentially a tool that construct a virtual-machine-like executing enviroment for comcipled binary executables.
  When executables are executed in the virtual enviromental, many aspects of the program can be checked at runtime. Valgrind is thus essentially a very advanced trading tool. Though because of its VM-like approach, the performance penalty is big as a tracing tool.
  
- ## Profiling and tracing
+ ## Tracing tools
  Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
  1. [Linux perf tools](https://github.com/brendangregg/perf-tools), 
- a collection of profiling and tracing tools built on Linux's [ftrace](https://en.wikipedia.org/wiki/Ftrace)
+ a collection of tracing tools built on Linux's [ftrace](https://en.wikipedia.org/wiki/Ftrace)
  and [perf](https://en.wikipedia.org/wiki/Perf_(Linux)) kernel facilities.
- 2. [perf](https://github.com/torvalds/linux/tree/master/tools/perf) as mentoned above.
- 3. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
+ 2. [strace](https://en.wikipedia.org/wiki/Strace), roughly equivalent to `perf trace` in terms of functionality. It is used to trace a process's interaction with the Linux kernel.
+ 3. [SystemTap](https://en.wikipedia.org/wiki/SystemTap), system wide probe and trace tool.
+ 4. [bpftrace](https://github.com/iovisor/bpftrace), like `SystemTap` with a different design goal with different trade-offs.
+ 5. [Dyninst](https://github.com/dyninst/dyninst), An advanced tool to instrument your binary for better analysis.
+ 
+## Sample-based profiling
+1. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
  compiling options started in the form of `-fprofile-<*>`. 
- 4. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
- 5. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful.
- 6. [strace](https://en.wikipedia.org/wiki/Strace), roughly equivalent to `perf trace` in terms of functionality. It is used to trace a process's interaction with the Linux kernel.
- 7. [VTune](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.qsn3ow), Intel's profiling tool.
+2. [perf_events](https://github.com/torvalds/linux/tree/master/tools/perf), Linux `perf` command, also known as `perf_events`, see [wiki pages](https://perf.wiki.kernel.org/index.php/Main_Page). For example, you can use `perf top -p <pid>` to get a sorted list of how much time each function in a program consumes. This tool started as a light-weight perforamnce profling tools using Linux perforamnce counters. Later, varous support for tracing was also added.
+3. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful. This is the old way of performance profling. The good thing is that it has built-in support in GCC.
+4. [VTune](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.qsn3ow), Intel's profiling tool.
 
+## Benchmarking
+ 1. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
+ 
 ## Error handling
 [Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
 The library aims to unifies error handling in C++. Accompaning with [the std::error proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1028r3.pdf),
