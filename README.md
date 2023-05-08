@@ -85,7 +85,7 @@ Modern implementations of malloc often provide the following extra features besi
  1. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
  
 ## Error handling
-[Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
+1. [Outcome](https://github.com/ned14/outcome), this library is also part of Boost, but can also be used as a standalone library.
 The library aims to unifies error handling in C++. Accompaning with [the std::error proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1028r3.pdf),
 and [the deterministic failure proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1095r0.pdf), and
 [the deterministic exception proposal](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0709r4.pdf),
@@ -93,7 +93,7 @@ error handling in C++ can be greatly simplified.
 It even makes intefacing with C code easier, [for example](https://ned14.github.io/outcome/experimental/c-api/example2/).
 Though many pieces have yet been put into the langauge standard,
 the library is usable now. 
-[Boost-LEAF](https://github.com/boostorg/leaf), A library developed as an reaction to `Outcome`.
+2. [Boost-LEAF](https://github.com/boostorg/leaf), A library developed as an reaction to `Outcome`.
 
 ## Working with binary files:
 1. Tools that inspect binary files
@@ -115,8 +115,8 @@ If you need a in-process database:
 - [LebelDB](https://github.com/google/leveldb), a on-disk key-value data egine.
 
 ## Unit test
-[Google Test](https://github.com/google/googletest), the most popular unit test framework.
-[catch2](https://github.com/catchorg/Catch2), a lightweight unit test framwork that allows you to write test along with source code.
+1. [Google Test](https://github.com/google/googletest), the most popular unit test framework.
+2. [catch2](https://github.com/catchorg/Catch2), a lightweight unit test framwork that allows you to write test along with source code.
 
 ## Remote procedure call
 [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
