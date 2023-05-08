@@ -81,7 +81,7 @@ Modern implementations of malloc often provide the following extra features besi
 4. [VTune](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.qsn3ow), Intel's profiling tool.
 5. [gperftools](https://github.com/gperftools/gperftools), as mentioned above, `gperftools` can also be used for performance profling. 
 
-## Benchmarking
+## Micro benchmarking
  1. [Google benchmark library](https://github.com/google/benchmark), a library that is used to benchmark code snippets.
  
 ## Error handling
@@ -93,6 +93,7 @@ error handling in C++ can be greatly simplified.
 It even makes intefacing with C code easier, [for example](https://ned14.github.io/outcome/experimental/c-api/example2/).
 Though many pieces have yet been put into the langauge standard,
 the library is usable now. 
+[Boost-LEAF](https://github.com/boostorg/leaf), A library developed as an reaction to `Outcome`.
 
 ## Working with binary files:
 1. Tools that inspect binary files
