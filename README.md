@@ -73,11 +73,11 @@ Modern implementations of malloc often provide the following extra features besi
  4. [bpftrace](https://github.com/iovisor/bpftrace), like `SystemTap` with a different design goal with different trade-offs.
  5. [Dyninst](https://github.com/dyninst/dyninst), An advanced tool to instrument your binary for better analysis.
  
-## Sample-based profiling
+## Profiling tools
 1. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
  compiling options started in the form of `-fprofile-<*>`. 
 2. [perf_events](https://github.com/torvalds/linux/tree/master/tools/perf), Linux `perf` command, also known as `perf_events`, see [wiki pages](https://perf.wiki.kernel.org/index.php/Main_Page). For example, you can use `perf top -p <pid>` to get a sorted list of how much time each function in a program consumes. This tool started as a light-weight perforamnce profling tools using Linux perforamnce counters. Later, varous support for tracing was also added.
-3. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful. This is the old way of performance profling. The good thing is that it has built-in support in GCC.
+3. [Gprof](https://en.wikipedia.org/wiki/Gprof), a performance tool based on sampling. It has its limitations, but still can be very useful. This is the old way of performance profling. The good thing is that it has built-in support in GCC using the `-pg` option.
 4. [VTune](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html#gs.qsn3ow), Intel's profiling tool.
 
 ## Benchmarking
