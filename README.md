@@ -66,6 +66,7 @@ Modern implementations of malloc often provide the following extra features besi
 
  ## Tracing tools
  Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
+ For an overview of Linux tracing facilities, see this [good blog post](https://jvns.ca/blog/2017/07/05/linux-tracing-systems/).
  1. [Linux perf tools](https://github.com/brendangregg/perf-tools),
  a collection of tracing tools built on Linux's [ftrace](https://en.wikipedia.org/wiki/Ftrace)
  and [perf](https://en.wikipedia.org/wiki/Perf_(Linux)) kernel facilities.
