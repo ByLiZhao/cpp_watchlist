@@ -72,8 +72,9 @@ Modern implementations of malloc often provide the following extra features besi
  and [perf](https://en.wikipedia.org/wiki/Perf_(Linux)) kernel facilities.
  2. [strace](https://en.wikipedia.org/wiki/Strace), roughly equivalent to `perf trace` in terms of functionality. It is used to trace a process's interaction with the Linux kernel.
  3. [SystemTap](https://en.wikipedia.org/wiki/SystemTap), system wide probe and trace tool.
+ The newest version ot it has been based on the [Linux eBPF subsystem](https://ebpf.io/what-is-ebpf/).
  4. [bpftrace](https://github.com/iovisor/bpftrace), like `SystemTap` with a different design goal with different trade-offs.
- This is a high level tool built on the [Linux eBPF subsystem](https://ebpf.io/what-is-ebpf/),
+ This is a high level tool built on the [Linux eBPF subsystem](https://ebpf.io/what-is-ebpf/).
  which aims to do probing while avoid violating security constraints.
  5. [Dyninst](https://github.com/dyninst/dyninst), An advanced tool to instrument your binary for better analysis.
 
