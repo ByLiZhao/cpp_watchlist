@@ -67,16 +67,19 @@ Modern implementations of malloc often provide the following extra features besi
  ## Tracing tools
  Many tools mentioned above are also capable of profiling to various extents. They won't be repeated below.
  For an overview of Linux tracing facilities, see this [good blog post](https://jvns.ca/blog/2017/07/05/linux-tracing-systems/).
+ Based on how tracing data is communicated from Linux kernel, there are mainly three interfaces.
+ They are `ftrace`, which works by wrting from and reading to `/sys/kernel/debug/tracing/`,
+ `perf_event_open`, which is a Linux system call to read trading data from a ring buffer,
+ and the [Linux eBPF sybsystem](https://ebpf.io/what-is-ebpf/),
+ which aims to do probing while avoid violating security constraints.
  1. [Linux perf tools](https://github.com/brendangregg/perf-tools),
  a collection of tracing tools built on Linux's [ftrace](https://en.wikipedia.org/wiki/Ftrace)
  and [perf](https://en.wikipedia.org/wiki/Perf_(Linux)) kernel facilities.
  2. [strace](https://en.wikipedia.org/wiki/Strace), roughly equivalent to `perf trace` in terms of functionality. It is used to trace a process's interaction with the Linux kernel.
  3. [SystemTap](https://en.wikipedia.org/wiki/SystemTap), system wide probe and trace tool.
- The newest version ot it has been based on the [Linux eBPF subsystem](https://ebpf.io/what-is-ebpf/).
+ The newest version ot it has been based on the Linux eBPF subsystem.
  4. [bpftrace](https://github.com/iovisor/bpftrace), like `SystemTap` with a different design goal with different trade-offs.
- This is a high level tool built on the [Linux eBPF subsystem](https://ebpf.io/what-is-ebpf/).
- which aims to do probing while avoid violating security constraints.
- 5. [Dyninst](https://github.com/dyninst/dyninst), An advanced tool to instrument your binary for better analysis.
+ This is a high level tool built on the Linux eBPF subsystem.
 
 ## Profiling tools
 1. Profile-guided optimization. Both Gcc and Clang support the so-called Profile-guided Optimization. Related features can be enabled with
