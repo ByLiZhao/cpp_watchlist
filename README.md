@@ -128,6 +128,7 @@ If you need a in-process database:
 ## Unit test
 1. [Google Test](https://github.com/google/googletest), the most popular unit test framework.
 2. [catch2](https://github.com/catchorg/Catch2), a lightweight unit test framwork that allows you to write test along with source code.
+3. [doctest](https://github.com/doctest/doctest), a header only unit test framework in the same spirit of the original catch2, but catch2 has since moved to library mode.
 
 ## Remote procedure call
 [gRPC](https://github.com/grpc/grpc), a RPC library using [protobuf](https://github.com/protocolbuffers/protobuf) underneath to serializing structured data.
