@@ -48,6 +48,9 @@ to use the template-heavy appraoch that the standard library uses.
 It focuses on network-centric applications.
 4. [Boost](https://github.com/boostorg/boost). A collect of libraries that aim to supplement the standard library.
 
+## Concurrency programming
+1. [concurrencpp](https://github.com/David-Haim/concurrencpp), tasks, executors, and timers, based on C++20's coroutines.
+
 ## Memory allocators
 Modern implementations of malloc often provide the following extra features besides allocating and deallocating memory chuncks:
 - Leak detection.
