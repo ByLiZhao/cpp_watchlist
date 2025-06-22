@@ -165,6 +165,7 @@ there is also [gflags](https://github.com/gflags/gflags).
 - [Cap'n proto](https://github.com/capnproto/capnproto), a data serialization format that tries to improve on Protocol buffers. This is a zero-copy format.
 - [Simple binary encoding](https://github.com/real-logic/simple-binary-encoding), a data serialization format used in the finacial industries. It is also a zero-copy format with different design tradeoffs than Cap'n proto.
 - [MessagePack](https://github.com/msgpack/msgpack), a data serialization format that does not need separate schema files. It is good for small data transmission between different processes on the same machine. It is less extensible than above formats, but can make simple things simple.
+- [Flatbuffers](https://github.com/google/flatbuffers), similar to "Cap'n proto", also a zero copy format.
 
 ## Logging
 1. [spdlog](https://github.com/gabime/spdlog), a configurable logging library.
