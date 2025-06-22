@@ -17,6 +17,9 @@ buiding from source if a certain version of a library is not avalible. Using Con
 using `apt` to install the "dev" version of a package on Debian/Ubuntu. The difference is that Conan is cross-flatform, and also with
 more configurable options, for example, specifying the verion of a library. More importantly, Conan does not mess with system-wide
 libraries. It is never a good idea to use a system package manager to manage project dependencies for this reason.
+3. [vcpkg](https://github.com/microsoft/vcpkg). The most common usage pattern of vcpkg is to use its "ports". A port is a collection
+of C++ packages that are guaranteed to work together, in the same spirit of Linux distributions. This mode of usage is what you want
+in 90% of the time. It has less features compared with Conan and only work with CMake, though is is sufficient for many use cases.
 
 ## Build tools
 1. [CMake](https://cmake.org/). CMake is horrible. I wish I could avoid it.
