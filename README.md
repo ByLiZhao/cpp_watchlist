@@ -50,6 +50,8 @@ It focuses on network-centric applications.
 
 ## Concurrency programming
 1. [concurrencpp](https://github.com/David-Haim/concurrencpp), tasks, executors, and timers, based on C++20's coroutines.
+2. [libcukoo](https://github.com/efficient/libcuckoo), like Java's `ConcurrentHashMap` but in C++.
+3. [moodycamel's ConcurrentQueue](https://github.com/cameron314/concurrentqueue), a fast MPMC queue implementation.
 
 ## Memory allocators
 Modern implementations of malloc often provide the following extra features besides allocating and deallocating memory chuncks:
